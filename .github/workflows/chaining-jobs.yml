@@ -50,3 +50,11 @@ jobs:
     steps:
       - name: Output for Job 4
         run: echo "Hello from Job 4"
+
+  job-5:
+    name: Job 5
+    runs-on: ubuntu-latest
+    needs: job-4
+    steps:
+      - name: Output for job 5
+        run: echo "Hello from job 5"
